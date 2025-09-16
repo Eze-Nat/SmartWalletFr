@@ -1,0 +1,141 @@
+/* Variables de color globales */
+:root {
+  --dark-background: #1a1a2e;
+  --dark-blue: #162447;
+  --purple-accent: #5e4a83;
+  --teal-accent: #00cc99;
+  --light-text-color: #e0e0e0;
+  --placeholder-color: #6a6a8a;
+}
+
+/* Contenedor principal de la página de autenticación */
+.auth-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--dark-background);
+  background-image: url('../../assets/images/auth-bg.jpg'); /* Asegúrate de que esta ruta sea correcta */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Tarjeta del formulario */
+.auth-form-card {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(var(--dark-blue-rgb), 0.85);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(15px); /* Efecto de cristal esmerilado */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--light-text-color);
+  text-align: center;
+}
+
+/* Encabezado del formulario */
+.auth-header {
+  margin-bottom: 2rem;
+}
+
+.logo-container {
+  background-color: var(--purple-accent);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem;
+}
+
+.logo-icon {
+  font-size: 2rem;
+  color: var(--light-text-color);
+}
+
+.auth-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.auth-subtitle {
+  color: var(--placeholder-color);
+  font-size: 0.9rem;
+}
+
+/* Formulario */
+.auth-form .form-group {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--purple-accent);
+  border: none;
+  border-radius: 8px;
+  color: var(--light-text-color);
+  transition: background-color 0.3s ease;
+}
+
+.auth-form input::placeholder {
+  color: var(--placeholder-color);
+}
+
+.auth-form input:focus {
+  outline: none;
+  background-color: var(--purple-accent);
+}
+
+.form-options {
+  text-align: right;
+  margin-bottom: 1.5rem;
+}
+
+.forgot-password {
+  color: var(--teal-accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Botones */
+.auth-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--teal-accent);
+  border: none;
+  border-radius: 8px;
+  color: var(--dark-background);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #00b386;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: var(--light-text-color);
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.toggle-button:hover {
+  opacity: 1;
+}

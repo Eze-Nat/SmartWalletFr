@@ -1,0 +1,70 @@
+/* Estilos del contenedor de la barra de navegación */
+.sidebar-navigation {
+  width: 250px;
+  background-color: #162447;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  color: #e0e0e0;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: #00cc99;
+  color: #1a1a2e;
+}
+
+.nav-item .icon {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.logout-section {
+  padding-top: 2rem;
+}
+
+.logout-button {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  color: #e0e0e0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e0e0e0;
+  color: #1a1a2e;
+}

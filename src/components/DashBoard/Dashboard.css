@@ -1,0 +1,72 @@
+/* Estilos para el layout general del dashboard */
+.dashboard-layout {
+  display: flex;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Estilos para el encabezado */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-message h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.welcome-message p {
+  margin: 0;
+  color: #aaa;
+}
+
+.user-profile .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Estilos para el resumen de saldos */
+.balance-summary {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.balance-card {
+  flex: 1;
+  background-color: #2a2a4a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.balance-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.balance-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #00cc99;
+}
+
+/* Estilos para las demás secciones */
+/* Puedes añadir más estilos aquí para las acciones rápidas, gráficos, etc. */

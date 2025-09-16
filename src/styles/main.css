@@ -1,0 +1,65 @@
+/* src/index.css o src/styles/main.css */
+
+/*
+  Variables de Color y Tipografía
+  Estas variables son un estándar en proyectos grandes.
+*/
+:root {
+  /* Mantén las variables por defecto de Vite */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Agrega tus variables de diseño para un control centralizado */
+  --dark-background: #1a1a2e;
+  --dark-blue: #162447;
+  --purple-accent: #5e4a83;
+  --teal-accent: #00cc99;
+  --light-text-color: #e0e0e0;
+  --placeholder-color: #6a6a8a;
+}
+
+/*
+  Estilos de Base
+  Estos estilos se aplican a todo el documento.
+*/
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--dark-background);
+  color: var(--light-text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 0;
+}
+
+a {
+  color: var(--teal-accent);
+  text-decoration: none;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--purple-accent);
+  color: var(--light-text-color);
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+/* Estilos de layout que ya discutimos */
+.main-layout {
+  display: flex;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+}
